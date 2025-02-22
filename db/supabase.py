@@ -2,8 +2,8 @@ import os
 from dotenv import load_dotenv
 from supabase import Client, create_client
 
-# Load environment variables from .env file
-load_dotenv()
+
+load_dotenv(".env")
 
 api_url: str = os.getenv("url")
 key: str = os.getenv("api")
